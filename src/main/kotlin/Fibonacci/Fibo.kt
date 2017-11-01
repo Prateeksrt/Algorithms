@@ -1,3 +1,5 @@
+package Fibonacci
+
 import java.math.BigInteger as BI
 
 val fiboLookup = linkedMapOf<Int, BI>()
@@ -30,6 +32,6 @@ fun main(args: Array<String>) {
     println(fibo(n))
     val final = System.currentTimeMillis()
 
-    println("DP fibo time : ${(finalTimeStamp - initialTimeStamp)}")
-    println("Non DP fibo time : ${(final - initial)}")
+    println("DP Fibonacci.fibo time : ${(finalTimeStamp - initialTimeStamp)}")
+    println("Non DP Fibonacci.fibo time : ${(final - initial)}")
 }

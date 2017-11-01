@@ -1,3 +1,5 @@
+package AssemblyLine
+
 import kotlin.system.measureNanoTime
 
 val a1 = arrayOf(4,5,3,2)
@@ -41,10 +43,10 @@ fun main(args: Array<String>) {
     println(a1.size)
 
     println(measureNanoTime {
-        _mintime(0,0)
+        _mintime(0, 0)
     }/1000000.0)
     println( measureNanoTime {
-      mintime(0,0)
+        mintime(0, 0)
     }/1000000.0)
 }
 
